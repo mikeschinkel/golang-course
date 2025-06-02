@@ -147,3 +147,5 @@ By the end of this course, you'll be able to:
 ---
 
 *This curriculum is based on actual Go skills assessment questions used in industry interviews and updated with modern Go features through 2024.*
+---
+*Copyright © 2025 Mike Schinkel and NewClarity Consulting, LLC. All rights reserved.*

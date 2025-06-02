@@ -35,3 +35,5 @@ if errors.As(err, &netErr) {
     // Handle network error specifically
 }
 ```
+---
+*Copyright © 2025 Mike Schinkel and NewClarity Consulting, LLC. All rights reserved.*

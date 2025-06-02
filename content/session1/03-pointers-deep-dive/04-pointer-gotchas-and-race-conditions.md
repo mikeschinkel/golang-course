@@ -63,3 +63,5 @@ func (inv *SafeInventory) GetTotal() int {  // Pointer receiver!
     return total
 }
 ```
+---
+*Copyright © 2025 Mike Schinkel and NewClarity Consulting, LLC. All rights reserved.*

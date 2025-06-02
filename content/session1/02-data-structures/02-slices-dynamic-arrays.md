@@ -24,3 +24,5 @@ s[:]       // [0 1 2 3 4 5] - entire slice
 dest := make([]int, len(slice))
 copy(dest, slice)
 ```
+---
+*Copyright © 2025 Mike Schinkel and NewClarity Consulting, LLC. All rights reserved.*

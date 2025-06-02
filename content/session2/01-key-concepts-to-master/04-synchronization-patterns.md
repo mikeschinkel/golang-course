@@ -40,3 +40,5 @@ atomic.AddInt64(&counter, 1)
 // Atomic load
 value := atomic.LoadInt64(&counter)
 ```
+---
+*Copyright © 2025 Mike Schinkel and NewClarity Consulting, LLC. All rights reserved.*

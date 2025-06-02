@@ -13,3 +13,5 @@ go processData(data)
 ```
 
 **Critical Point:** Main function doesn't wait for goroutines to finish!
+---
+*Copyright © 2025 Mike Schinkel and NewClarity Consulting, LLC. All rights reserved.*

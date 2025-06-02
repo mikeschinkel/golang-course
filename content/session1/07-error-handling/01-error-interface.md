@@ -33,3 +33,5 @@ func connectToServer(host string, port int) error {
     return nil
 }
 ```
+---
+*Copyright © 2025 Mike Schinkel and NewClarity Consulting, LLC. All rights reserved.*

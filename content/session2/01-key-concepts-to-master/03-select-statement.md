@@ -11,3 +11,5 @@ default:
     fmt.Println("No channels ready")
 }
 ```
+---
+*Copyright © 2025 Mike Schinkel and NewClarity Consulting, LLC. All rights reserved.*

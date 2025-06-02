@@ -15,3 +15,5 @@ x := arr[0]     // Access
 arr4 := arr2    // Copies entire array
 arr4[0] = 999   // Doesn't affect arr2
 ```
+---
+*Copyright © 2025 Mike Schinkel and NewClarity Consulting, LLC. All rights reserved.*

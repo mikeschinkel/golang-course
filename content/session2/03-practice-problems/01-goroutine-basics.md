@@ -7,3 +7,5 @@ func main() {
 }
 // A) 1\n2  B) 2\n1  C) 2  D) 1
 ```
+---
+*Copyright © 2025 Mike Schinkel and NewClarity Consulting, LLC. All rights reserved.*

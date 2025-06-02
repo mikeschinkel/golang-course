@@ -62,3 +62,5 @@ By the end of this session, you should be able to:
 
 **Previous Session:** [Session 1: Go Fundamentals & Memory Management](../session1/session1.md)  
 **Next Session:** [Session 3: Package Design & Go Architecture Patterns](../session3/session3.md)
+---
+*Copyright © 2025 Mike Schinkel and NewClarity Consulting, LLC. All rights reserved.*

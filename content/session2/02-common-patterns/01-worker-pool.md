@@ -27,3 +27,5 @@ for r := 1; r <= 5; r++ {
     <-results
 }
 ```
+---
+*Copyright © 2025 Mike Schinkel and NewClarity Consulting, LLC. All rights reserved.*

@@ -24,3 +24,5 @@ circlePtr := &Circle{Radius: 3.0}
 circlePtr.Resize(1.5)   // Direct pointer call
 area2 := circlePtr.Area() // Go converts to (*circlePtr).Area()
 ```
+---
+*Copyright © 2025 Mike Schinkel and NewClarity Consulting, LLC. All rights reserved.*

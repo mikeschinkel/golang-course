@@ -1441,3 +1441,5 @@ func (cb *CircuitBreaker) Call(fn func() error) error {
 
 **You're now fully prepared for your Go interview! Remember: Go values simplicity, clarity, and explicit error handling. When in doubt, choose the approach that's easiest to understand and maintain.**
         
+---
+*Copyright © 2025 Mike Schinkel and NewClarity Consulting, LLC. All rights reserved.*

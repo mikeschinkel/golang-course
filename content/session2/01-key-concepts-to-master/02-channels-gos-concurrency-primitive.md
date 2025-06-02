@@ -19,3 +19,5 @@ if !ok {
     fmt.Println("Channel is closed")
 }
 ```
+---
+*Copyright © 2025 Mike Schinkel and NewClarity Consulting, LLC. All rights reserved.*

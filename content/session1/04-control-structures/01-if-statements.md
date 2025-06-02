@@ -35,3 +35,5 @@ if x > 0 && y > 0 && x*y < 100 {
     fmt.Println("Valid coordinates")
 }
 ```
+---
+*Copyright © 2025 Mike Schinkel and NewClarity Consulting, LLC. All rights reserved.*

@@ -40,3 +40,5 @@ result := sum(1, 2, 3, 4, 5)
 slice := []int{1, 2, 3}
 result2 := sum(slice...)  // Expand slice
 ```
+---
+*Copyright © 2025 Mike Schinkel and NewClarity Consulting, LLC. All rights reserved.*

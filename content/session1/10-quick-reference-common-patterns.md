@@ -32,3 +32,5 @@ copy(dest, source)
 // Or
 dest := append([]int(nil), source...)
 ```
+---
+*Copyright © 2025 Mike Schinkel and NewClarity Consulting, LLC. All rights reserved.*

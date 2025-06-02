@@ -15,3 +15,5 @@
 7. **"What's the purpose of the select statement?"**
 
 8. **"How do you wait for multiple goroutines to complete?"**
+---
+*Copyright © 2025 Mike Schinkel and NewClarity Consulting, LLC. All rights reserved.*

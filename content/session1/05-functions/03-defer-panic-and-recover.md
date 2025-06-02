@@ -38,3 +38,5 @@ func safeOperation(a, b int) (result int, err error) {
     return
 }
 ```
+---
+*Copyright © 2025 Mike Schinkel and NewClarity Consulting, LLC. All rights reserved.*

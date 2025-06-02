@@ -19,3 +19,5 @@ if ptr == nil {
 ptr = new(int)       // Points to new int with value 0
 *ptr = 42
 ```
+---
+*Copyright © 2025 Mike Schinkel and NewClarity Consulting, LLC. All rights reserved.*

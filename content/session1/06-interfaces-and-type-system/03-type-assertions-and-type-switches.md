@@ -21,3 +21,5 @@ default:
     fmt.Printf("Unknown: %T\n", v)
 }
 ```
+---
+*Copyright © 2025 Mike Schinkel and NewClarity Consulting, LLC. All rights reserved.*

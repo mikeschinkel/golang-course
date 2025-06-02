@@ -24,3 +24,5 @@ point := Point{X: 5, Y: 10}
 movePoint(&point, 3, 4)
 fmt.Println(point)     // {8 14}
 ```
+---
+*Copyright © 2025 Mike Schinkel and NewClarity Consulting, LLC. All rights reserved.*

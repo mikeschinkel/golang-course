@@ -29,3 +29,5 @@ triple := makeMultiplier(3)
 fmt.Println(triple(4))  // 12
 fmt.Println(triple(5))  // 15
 ```
+---
+*Copyright © 2025 Mike Schinkel and NewClarity Consulting, LLC. All rights reserved.*

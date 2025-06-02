@@ -10,3 +10,5 @@ func receiver(ch <-chan int) {
     val := <-ch
 }
 ```
+---
+*Copyright © 2025 Mike Schinkel and NewClarity Consulting, LLC. All rights reserved.*

@@ -130,6 +130,7 @@ By completing this course, you will be able to:
 ## 📚 Additional Resources
 
 - **[Go Documentation](https://golang.org/doc/)** - Official Go documentation
+- **[Go Proverbs](https://go-proverbs.github.io/)** - 20 Essential Go programming principles
 - **[Effective Go](https://golang.org/doc/effective_go.html)** - Writing idiomatic Go
 - **[Go Standard Library](https://pkg.go.dev/std)** - Complete standard library reference
 - **[Go Memory Model](https://golang.org/ref/mem)** - Understanding Go's memory guarantees
@@ -139,3 +140,5 @@ By completing this course, you will be able to:
 **Ready to begin?** Start with [Session 1: Go Fundamentals & Memory Management](./session1/session1.md)
 
 **Good luck with your Go interview preparation! 🚀**
+---
+*Copyright © 2025 Mike Schinkel and NewClarity Consulting, LLC. All rights reserved.*

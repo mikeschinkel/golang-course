@@ -16,3 +16,5 @@ func (l *Logger) Write(data []byte) (int, error) {
 var w Writer = &Logger{prefix: "[INFO] "}
 w.Write([]byte("Application started"))
 ```
+---
+*Copyright © 2025 Mike Schinkel and NewClarity Consulting, LLC. All rights reserved.*

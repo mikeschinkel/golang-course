@@ -84,3 +84,5 @@ if userSet.Contains("alice") {
     fmt.Println("Found alice")
 }
 ```
+---
+*Copyright © 2025 Mike Schinkel and NewClarity Consulting, LLC. All rights reserved.*

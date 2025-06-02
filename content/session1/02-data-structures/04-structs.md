@@ -43,3 +43,5 @@ emp := Employee{
 // Access embedded fields directly
 fmt.Println(emp.Name)  // Same as emp.Person.Name
 ```
+---
+*Copyright © 2025 Mike Schinkel and NewClarity Consulting, LLC. All rights reserved.*

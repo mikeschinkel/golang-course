@@ -18,3 +18,5 @@ type Person struct {
 }
 var person Person  // {Name: "", Age: 0}
 ```
+---
+*Copyright © 2025 Mike Schinkel and NewClarity Consulting, LLC. All rights reserved.*

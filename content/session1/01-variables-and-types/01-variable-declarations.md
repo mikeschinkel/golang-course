@@ -21,3 +21,5 @@ x, y = y, x                 // Swap values
 // Blank identifier
 _, err := strconv.Atoi("123")  // Ignore first return value
 ```
+---
+*Copyright © 2025 Mike Schinkel and NewClarity Consulting, LLC. All rights reserved.*

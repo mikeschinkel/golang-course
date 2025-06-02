@@ -62,3 +62,5 @@ Before Session 2, ensure you can:
 ---
 
 **Session 2 Preview:** We'll review your homework solutions and dive deep into goroutines, channels, and concurrent programming patterns.
+---
+*Copyright © 2025 Mike Schinkel and NewClarity Consulting, LLC. All rights reserved.*

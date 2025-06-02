@@ -74,3 +74,5 @@ type Counter struct {
 
 // Which methods need pointer receivers and why?
 ```
+---
+*Copyright © 2025 Mike Schinkel and NewClarity Consulting, LLC. All rights reserved.*

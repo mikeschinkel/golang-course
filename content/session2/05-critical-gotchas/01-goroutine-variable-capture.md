@@ -14,3 +14,5 @@ for i := 0; i < 5; i++ {
     }(i)
 }
 ```
+---
+*Copyright © 2025 Mike Schinkel and NewClarity Consulting, LLC. All rights reserved.*

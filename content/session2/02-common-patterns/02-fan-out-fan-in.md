@@ -16,3 +16,5 @@ func fanOut(input <-chan int) (<-chan int, <-chan int) {
     return out1, out2
 }
 ```
+---
+*Copyright © 2025 Mike Schinkel and NewClarity Consulting, LLC. All rights reserved.*

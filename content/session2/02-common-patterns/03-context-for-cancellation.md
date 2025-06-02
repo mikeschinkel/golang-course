@@ -10,3 +10,5 @@ case <-ctx.Done():
     return ctx.Err() // timeout or cancellation
 }
 ```
+---
+*Copyright © 2025 Mike Schinkel and NewClarity Consulting, LLC. All rights reserved.*

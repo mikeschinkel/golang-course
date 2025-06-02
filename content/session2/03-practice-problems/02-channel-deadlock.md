@@ -8,3 +8,5 @@ func main() {
     fmt.Println(val)
 }
 ```
+---
+*Copyright © 2025 Mike Schinkel and NewClarity Consulting, LLC. All rights reserved.*

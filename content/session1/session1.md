@@ -71,3 +71,5 @@ By the end of this session, you should be able to:
 ---
 
 **Next Session:** [Session 2: Concurrency Foundations](../session2/session2.md)
+---
+*Copyright © 2025 Mike Schinkel and NewClarity Consulting, LLC. All rights reserved.*
