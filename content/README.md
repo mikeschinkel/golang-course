@@ -8,9 +8,8 @@ This course covers all essential Go concepts needed for technical interviews, fr
 
 ## 📋 Course Materials
 
-### Core Documents
+### Course Syllabus
 - **[Course Syllabus](./syllabus.md)** - Complete course overview, learning objectives, and schedule
-- **[Answer Key](./answer_key.md)** - Solutions to practice problems and exercises
 
 ### Visual Resources
 - **[Stack vs Heap Diagram](images/stack-vs-heap.png)** - Memory management visualization
