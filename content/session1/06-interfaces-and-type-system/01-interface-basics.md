@@ -18,9 +18,11 @@ type ReadWriter interface {
 
 // Empty interface
 var value interface{}  // Can hold any type
+//var value any        // Means the same as prior line
 value = 42
 value = "hello"
 value = []int{1, 2, 3}
 ```
+
 ---
 *Copyright © 2025 Mike Schinkel and NewClarity Consulting, LLC. All rights reserved.*

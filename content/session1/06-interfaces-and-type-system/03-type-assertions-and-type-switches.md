@@ -2,7 +2,7 @@
 
 ```go
 // Type assertion
-var data interface{} = "world"
+var data any = "world"
 text := data.(string)           // Direct assertion (panics if wrong)
 text, ok := data.(string)       // Safe assertion
 if ok {
