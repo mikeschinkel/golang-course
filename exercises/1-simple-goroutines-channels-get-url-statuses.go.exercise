@@ -34,7 +34,7 @@
 //   TODO 13: Parameters should include the channel and WaitGroup pointer
 //   TODO 14: Use defer wg.Done() to signal completion when this goroutine exits
 //   TODO 15: Receive from channel using the two-value form with <- operator
-//   TODO 16: Check the second return value (ok) to see if channel is still open
+//   TODO 16: Check the second return value (typically named `ok`) to see if channel is still open
 //   TODO 17: Use fmt.Println() or similar to display the status string
 //
 // INSTRUCTIONS:
@@ -82,7 +82,7 @@ func main() {
 	go printResults(/* TODO 3: Pass parameters here */)
 	go checkURLs(/* TODO 4: Pass parameters here */)
 
-	// TODO 5: Using `wg`, ensure above goroutines run to completion
+	// TODO 5: Ensure above goroutines run to completion
 
 }
 
@@ -93,11 +93,11 @@ func checkURLs(/* TODO 6: Define parameters here */) {
 
 	for _, url := range /* TODO: Get urls from a parameter */ {
 
-		// TODO 8: Make `wg` aware of the following goroutine
+		// TODO 8: Make `wg` aware of the following goroutine for each loop iteration
 
 		go func(u string) { // TODO[Part2]: Remove this parameter and use `url` from for loop instead
 
-			// TODO 9: Using `wg`, ensure no deadlock when run as a goroutine
+			// TODO 9: Ensure no deadlock when run as a goroutine
 
 			status := requestStatus(u) // TODO[Part2]: Use `url` here instead of `u`
 
@@ -106,7 +106,7 @@ func checkURLs(/* TODO 6: Define parameters here */) {
 		}(url)  // TODO[Part2]: Remove this argument when removing the parameter above
 
 	}
-	// TODO 11: Using `wg`, ensure above goroutines run to completion
+	// TODO 11: Ensure above goroutines run to completion
 	// TODO 12: Signal to channel readers that no more results are coming
 }
 
