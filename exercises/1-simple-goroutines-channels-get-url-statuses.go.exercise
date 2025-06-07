@@ -7,9 +7,9 @@
 //
 // USE-CASE:
 //   This simple exercise takes a list of URLs — which are hardcoded for
-//   the exercise but in real-world use would like could come from a file
-//   or database, or other source — and test the return status of HTTP
-//   requesting each URL.
+//   the exercise but in real-world use would likely could come from a
+//   file or database, or other source — and test the return status of
+//   requesting each URL via HTTPS.
 //
 // EXPECTED OUTPUT (order may vary):
 //   https://www.google.com: 200
