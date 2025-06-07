@@ -1,0 +1,140 @@
+// Copyright © 2025 Mike Schinkel and NewClarity Consulting, LLC. All rights reserved.
+// For Go mentoring, see https://www.codementor.io/@mikeschinkel
+//
+// PURPOSE:
+//   This exercise is designed to illustrate simple concurrency to do work
+//   and how to use channels to communicate work results.
+//
+// USE-CASE:
+//   This simple exercise takes a list of URLs — which are hardcoded for
+//   the exercise but in real-world use would like could come from a file
+//   or database, or other source — and test the return status of HTTP
+//   requesting each URL.
+//
+// EXPECTED OUTPUT (order may vary):
+//   https://www.google.com: 200
+//   https://www.github.com: 200
+//   https://www.stackoverflow.com: 200
+//   https://httpstat.us/404: 404
+//   https://not.there: ERROR; Get "https://not.there": dial tcp: lookup not.there: no such host
+//
+// HINTS (only look if you get stuck):
+//   TODO 1: Use make() with chan string and a reasonable buffer size
+//   TODO 2: Use wg.Add() with the number of goroutines you're starting
+//   TODO 3: Pass the results channel and a pointer to the WaitGroup
+//   TODO 4: Pass the URLs slice, results channel, and pointer to the WaitGroup
+//   TODO 5: Use wg.Wait() to block until all goroutines complete
+//   TODO 6: Parameters should include the URL slice, channel, and WaitGroup pointer
+//   TODO 7: Use defer with the WaitGroup parameter to signal completion when this goroutine exits
+//   TODO 8: Use wg.Add(1) before starting each URL checking goroutine
+//   TODO 9: Use defer wg.Done() at the start of the goroutine function
+//   TODO 10: Send using the <- operator with the channel and status value
+//   TODO 11: Use wg.Wait() to wait for all URL goroutines
+//   TODO 12: Call close() on the channel to signal no more data is coming
+//   TODO 13: Parameters should include the channel and WaitGroup pointer
+//   TODO 14: Use defer wg.Done() to signal completion when this goroutine exits
+//   TODO 15: Receive from channel using the two-value form with <- operator
+//   TODO 16: Check the second return value (ok) to see if channel is still open
+//   TODO 17: Use fmt.Println() or similar to display the status string
+//
+// INSTRUCTIONS:
+//    1. Add a `go.mod` with `module goroutine-channel-example` and `go 1.24`.
+//    2. Save this file as `main.go`.
+//    3. Execute `go run main.go` to try the code.
+//
+//    Part 1:
+//      Implement the appropriate code for each TODO, except Part2 ones
+//      Run it to verify it works
+//
+//    Part 2:
+//      Change to `go 1.21` in `go.mod`
+//      Change the code per the TODO[Part2] statements
+//      Run it to see it not working as expected.
+//      Explain why it did not work as expected.
+//
+
+package main
+
+import (
+	"fmt"
+	"io"
+	"log"
+	"net/http"
+	"sync"
+	"time"
+)
+
+var urlsToCheck = []string{
+	"https://www.google.com",
+	"https://www.github.com",
+	"https://www.stackoverflow.com",
+	"https://httpstat.us/404",
+	"https://not.there",
+}
+
+func main() {
+	var results chan string
+	// TODO 1: Make sure `results` channel is ready to use
+
+	var wg sync.WaitGroup
+	// TODO 2: Make `wg` aware of the following goroutines
+
+	go printResults(/* TODO 3: Pass parameters here */)
+	go checkURLs(/* TODO 4: Pass parameters here */)
+
+	// TODO 5: Using `wg`, ensure above goroutines run to completion
+
+}
+
+func checkURLs(/* TODO 6: Define parameters here */) {
+	var wg sync.WaitGroup
+
+	// TODO 7: Ensure no deadlock when run as a goroutine, using the appropriate sync.WaitGroup
+
+	for _, url := range /* TODO: Get urls from a parameter */ {
+
+		// TODO 8: Make `wg` aware of the following goroutine
+
+		go func(u string) { // TODO[Part2]: Remove this parameter and use `url` from for loop instead
+
+			// TODO 9: Using `wg`, ensure no deadlock when run as a goroutine
+
+			status := requestStatus(u) // TODO[Part2]: Use `url` here instead of `u`
+
+			// TODO 10: Send status over channel
+
+		}(url)  // TODO[Part2]: Remove this argument when removing the parameter above
+
+	}
+	// TODO 11: Using `wg`, ensure above goroutines run to completion
+	// TODO 12: Signal to channel readers that no more results are coming
+}
+
+func printResults(/* TODO 13: Define parameters here */) {
+	// TODO 14: Ensure no deadlock when run as a goroutine using the appropriate sync.WaitGroup
+	for {
+		// TODO 15: Get results from channel
+		if /* TODO 16: Test if no more results available */ {
+			break
+		}
+		// TODO 17: Output result
+	}
+}
+
+func requestStatus(url string) string {
+	client := &http.Client{Timeout: 3 * time.Second}
+	resp, err := client.Get(url)
+	if err != nil {
+		return fmt.Sprintf("%s: ERROR; %s", url, err)
+	}
+	mustClose(resp.Body)
+	return fmt.Sprintf("%s: %d", url, resp.StatusCode)
+}
+
+func mustClose(c io.Closer) {
+	err := c.Close()
+	if err != nil {
+		log.Print(err)
+	}
+}
+
